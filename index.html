@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Starbound Stories</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash">
+    <img src="images/logo.png" alt="Starbound Stories">
+    <h1>Starbound Stories</h1>
+    <p>Launching your next adventure among the stars...</p>
+  </div>
+
+  <!-- Main Bookstore -->
+  <div id="content">
+    <h1>📚 Starbound Stories</h1>
+
+    <!-- Search & Filter -->
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search by title or author">
+      <select id="genre-filter">
+        <option value="all">All Genres</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="fiction">Fiction</option>
+		<option value="nonfiction">Non-Fiction</option>
+      </select>
+    </div>
+
+    <!-- Book Grid -->
+    <div id="book-list" class="book-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
