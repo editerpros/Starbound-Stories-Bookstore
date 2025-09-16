@@ -11,7 +11,7 @@ const books = [
     title: "Beyond The Horizon of Space : A Journey into the Unknown Universe",
     author: "Advait S",
     genre: "Fiction",
-    price: "FREE",
+    price: "4.50$",
     cover: "images/Beyondthehorizonofspace.jpg",
     link: "https://www.patreon.com/posts/beyond-horizon-139032647?source=storefront"
   }
