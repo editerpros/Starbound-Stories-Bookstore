@@ -8,12 +8,12 @@ window.addEventListener("load", () => {
 // Book Data
 const books = [
   {
-    title: "Beyond The Horizon of Space : A Journey into the Unknown Universe",
+    title: "Beyond The Horizon of Space: A Journey into the Unknown Universe",
     author: "Advait S",
     genre: "Fiction",
-    price: "4.50$",
+    price: "Free",
     cover: "images/Beyondthehorizonofspace.jpg",
-    link: "https://www.patreon.com/posts/beyond-horizon-139032647?source=storefront"
+    link: "https://www.patreon.com/posts/beyond-horizon-139032647?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   }
   
 ];
@@ -57,3 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
     renderBooks(e.target.value, document.getElementById("search").value.toLowerCase());
   });
 });
+
