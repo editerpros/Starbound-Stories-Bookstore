@@ -37,7 +37,7 @@ function renderBooks(filter = "all", search = "") {
         <p class="price">${book.price}</p>
         ${book.price === "FREE" 
           ? `<a href="${book.link}" class="btn free">📖 Read Free</a>` 
-          : `<a href="${book.link}" target="_blank" class="btn buy">Buy on Patreon</a>`}
+          : `<a href="${book.link}" target="_blank" class="btn buy">Buy</a>`}
       `;
 
       list.appendChild(card);
@@ -57,4 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
     renderBooks(e.target.value, document.getElementById("search").value.toLowerCase());
   });
 });
+
 
