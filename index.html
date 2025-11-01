@@ -1,39 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Starbound Stories</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starbound Stories</title>
+<meta name="description" content="Starbound Stories — short fiction, novels & cosmic adventures.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Splash Screen -->
-  <div id="splash">
-    <img src="images/logo.png" alt="Starbound Stories">
-    <h1>Starbound Stories</h1>
-    <p>Launching your next adventure among the stars...</p>
-  </div>
 
-  <!-- Main Bookstore -->
-  <div id="content">
-    <h1>📚 Starbound Stories</h1>
+<!-- Starfield background -->
+<canvas id="starfield" aria-hidden="true"></canvas>
 
-    <!-- Search & Filter -->
-    <div class="controls">
-      <input type="text" id="search" placeholder="Search by title or author">
-      <select id="genre-filter">
-        <option value="all">All Genres</option>
-        <option value="fantasy">Fantasy</option>
-        <option value="sci-fi">Sci-Fi</option>
-        <option value="fiction">Fiction</option>
-		<option value="nonfiction">Non-Fiction</option>
-      </select>
+<!-- Splash Screen -->
+<div id="splash" role="status" aria-live="polite">
+  <img src="images/logo.png" alt="Starbound Stories logo" id="splash-logo">
+  <h1>Starbound Stories</h1>
+  <p>Launching your next adventure among the stars...</p>
+  <div class="spinner"></div>
+</div>
+
+<!-- App -->
+<div id="app">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Starbound Stories logo" class="logo">
+        <div>
+          <h1>Starbound Stories</h1>
+          <p class="tagline">Short fiction, novels & cosmic adventures</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-btn" data-view="home">Home</button>
+        <button class="nav-btn" data-view="favorites">⭐ Favorites <span id="fav-count" class="badge">0</span></button>
+        <button class="nav-btn" data-view="about">About</button>
+      </nav>
+
+      <div class="actions">
+        <label class="sr-only" for="theme-toggle">Toggle theme</label>
+        <button id="theme-toggle" aria-pressed="false" title="Toggle theme">🌙</button>
+        <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+      </div>
     </div>
 
-    <!-- Book Grid -->
-    <div id="book-list" class="book-grid"></div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <button class="nav-btn" data-view="home">Home</button>
+      <button class="nav-btn" data-view="favorites">Favorites</button>
+      <button class="nav-btn" data-view="about">About</button>
+    </div>
+  </header>
+
+  <main id="main" class="main">
+    <!-- Home View -->
+    <section id="home" class="view">
+      <section class="controls" aria-label="Search and filters">
+        <div class="search-wrap">
+          <input type="text" id="search" placeholder="Search by title or author..." autocomplete="off">
+          <ul id="suggestions" class="suggestions" hidden></ul>
+        </div>
+        <div class="filters">
+          <select id="genre-filter">
+            <option value="all">All Genres</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+          </select>
+          <select id="sort-filter">
+            <option value="default">Sort by: Default</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="title-az">Title: A–Z</option>
+            <option value="title-za">Title: Z–A</option>
+            <option value="author-az">Author: A–Z</option>
+            <option value="author-za">Author: Z–A</option>
+          </select>
+        </div>
+      </section>
+
+      <div id="book-list" class="book-grid"></div>
+      <p id="no-results" hidden>No books found.</p>
+    </section>
+
+    <!-- Favorites View -->
+    <section id="favorites" class="view" hidden>
+      <h2>Your Favorites</h2>
+      <div id="favorites-list" class="book-grid"></div>
+      <p id="no-favorites" hidden>You haven’t added any favorites yet.</p>
+    </section>
+
+    <!-- About View -->
+    <section id="about" class="view" hidden>
+      <h2>About Starbound Stories</h2>
+      <p>
+        Starbound Stories is a collection of short fiction and novels exploring the mysteries of the cosmos.
+        From magical starfields to faraway galaxies, discover worlds beyond imagination.
+      </p>
+    </section>
+  </main>
+
+  <!-- Book Modal -->
+  <div id="book-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <span class="close-modal" role="button" aria-label="Close modal">&times;</span>
+      <img id="modal-cover" src="images/Beyondthehorizonofspace.jpg" alt="Beyond The Spacs Part-1">
+      <h2 id="modal-title"></h2>
+      <p id="modal-author"></p>
+      <p id="modal-price"></p>
+      <p id="modal-description"></p>
+      <a id="modal-link" href="https://www.patreon.com/posts/beyond-horizon-139032647?source=storefront" target="_blank" class="btn buy">Buy</a>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Starbound Stories — All Rights Reserved.</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
