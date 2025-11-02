@@ -8,22 +8,22 @@
    ------------------------- */
 const books = [
   {
-    title: "𝗘𝗖𝗟𝗜𝗣𝗦𝗘𝗥𝗔-𝗧𝗛𝗘 𝗧𝗥𝗘𝗔𝗦𝗨𝗥𝗘 𝗢𝗙 𝗦𝗛𝗔𝗗𝗢𝗪𝗦",
-    author: "Aradhya S",
-    genre: "Fantasy",
-    price: 0,
-    cover: "https://c10.patreonusercontent.com/4/patreon-media/p/post/142633367/5f3d3ab7e66444d88a2cc5bd637f36d8/eyJ3Ijo2MjB9/1.png?token-hash=1fwOQDtK7cRxACP8iuDpbfVLjElDP-KLvZPQPHyb3AY%3D&token-time=1763337600",
-    link: "https://www.patreon.com/posts/142633367",
-    description: "",
-    featured: true
-  },
-  {
     title: "Beyond The Horizon of Space: A Journey into the Unknown Universe",
     author: "Advait S",
     genre: "Fiction",
     price: 0,
     cover: "https://images.unsplash.com/photo-1447433819943-74a20887a81e?auto=format&fit=crop&w=600&q=80",
     link: "https://www.patreon.com/posts/beyond-horizon-139032647?source=storefront",
+    description: "An epic tale of exploration and discovery in the uncharted reaches of the cosmos.",
+    featured: true
+  },
+  {
+    title: "𝗘𝗖𝗟𝗜𝗣𝗦𝗘𝗥𝗔-𝗧𝗛𝗘 𝗧𝗥𝗘𝗔𝗦𝗨𝗥𝗘 𝗢𝗙 𝗦𝗛𝗔𝗗𝗢𝗪𝗦",
+    author: "Aradhya S",
+    genre: "Fantasy",
+    price: 0,
+    cover: "https://c10.patreonusercontent.com/4/patreon-media/p/post/142633367/5f3d3ab7e66444d88a2cc5bd637f36d8/eyJ3Ijo2MjB9/1.png?token-hash=1fwOQDtK7cRxACP8iuDpbfVLjElDP-KLvZPQPHyb3AY%3D&token-time=1763337600",
+    link: "https://www.patreon.com/posts/142633367",
     description: "An epic tale of exploration and discovery in the uncharted reaches of the cosmos.",
     featured: true
   }
@@ -326,7 +326,7 @@ function startStarfield() {
 }
 
 /* -------------------------
-   Initialization (splash fix)
+   Initialisation (splash fix)
    ------------------------- */
 window.addEventListener("DOMContentLoaded", () => {
   const splash = document.getElementById("splash");
@@ -350,4 +350,3 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideSplash, 1200);
   }
 });
-
