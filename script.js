@@ -13,7 +13,7 @@ const books = [
     genre: "Fiction",
     price: 0,
     cover: "images/Beyondthehorizonofspace.jpg",
-    link: "https://www.patreon.com/posts/beyond-horizon-139032647?source=storefront",
+    link: "books/Beyond The Horizon of Space-A Journey into the Unknown Universe.pdf",
     description: "An epic tale of exploration and discovery in the uncharted reaches of the cosmos.",
     featured: true
   },
@@ -23,7 +23,7 @@ const books = [
     genre: "Fantasy",
     price: 0,
     cover: "images/eclipsera_cover.jpeg",
-    link: "https://www.patreon.com/posts/142633367",
+    link: "books/ECLIPSERA-The TREASURE OF SHADOWS.pdf",
     description: "An epic tale of exploration and discovery in the uncharted reaches of the cosmos.",
     featured: true
   },
@@ -33,7 +33,7 @@ const books = [
     genre: "Sci-Fi",
     price: 0,
     cover: "images/Echoes Beyond Eternity.png",
-    link: "https://www.patreon.com/posts/beyond-horizon-139032647?source=storefront",
+    link: "books/Beyond The Horizon of Space-Echoes Beyond Eternity.pdf",
     description: "The complete and final story of humanity’s encounter with Chronovar, an eternal cosmic intelligence.",
     featured: true
   }
@@ -360,4 +360,5 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideSplash, 1200);
   }
 });
+
 
