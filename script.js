@@ -12,7 +12,7 @@ const books = [
     author: "Advait S",
     genre: "Fiction",
     price: 0,
-    cover: "https://images.unsplash.com/photo-1447433819943-74a20887a81e?auto=format&fit=crop&w=600&q=80",
+    cover: "images/Beyondthehorizonofspace.jpg",
     link: "https://www.patreon.com/posts/beyond-horizon-139032647?source=storefront",
     description: "An epic tale of exploration and discovery in the uncharted reaches of the cosmos.",
     featured: true
@@ -22,9 +22,19 @@ const books = [
     author: "Aradhya S",
     genre: "Fantasy",
     price: 0,
-    cover: "https://c10.patreonusercontent.com/4/patreon-media/p/post/142633367/5f3d3ab7e66444d88a2cc5bd637f36d8/eyJ3Ijo2MjB9/1.png?token-hash=1fwOQDtK7cRxACP8iuDpbfVLjElDP-KLvZPQPHyb3AY%3D&token-time=1763337600",
+    cover: "images/eclipsera_cover.jpeg",
     link: "https://www.patreon.com/posts/142633367",
     description: "An epic tale of exploration and discovery in the uncharted reaches of the cosmos.",
+    featured: true
+  },
+  {
+    title: "Beyond the Horizon of Space: Echoes Beyond Eternity",
+    author: "Advait S",
+    genre: "Sci-Fi",
+    price: 0,
+    cover: "images/Echoes Beyond Eternity.png",
+    link: "https://www.patreon.com/posts/beyond-horizon-139032647?source=storefront",
+    description: "The complete and final story of humanity’s encounter with Chronovar, an eternal cosmic intelligence.",
     featured: true
   }
 ];
@@ -350,3 +360,4 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideSplash, 1200);
   }
 });
+
