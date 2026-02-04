@@ -18,16 +18,6 @@ const books = [
     featured: true
   },
   {
-    title: "𝗘𝗖𝗟𝗜𝗣𝗦𝗘𝗥𝗔-𝗧𝗛𝗘 𝗧𝗥𝗘𝗔𝗦𝗨𝗥𝗘 𝗢𝗙 𝗦𝗛𝗔𝗗𝗢𝗪𝗦",
-    author: "Aradhya S",
-    genre: "Fantasy",
-    price: 0,
-    cover: "images/eclipsera_cover.jpeg",
-    link: "books/ECLIPSERA-The TREASURE OF SHADOWS.pdf",
-    description: "An epic tale of exploration and discovery in the uncharted reaches of the cosmos.",
-    featured: true
-  },
-  {
     title: "Beyond the Horizon of Space: Echoes Beyond Eternity",
     author: "Advait S",
     genre: "Sci-Fi",
@@ -360,5 +350,6 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideSplash, 1200);
   }
 });
+
 
 
