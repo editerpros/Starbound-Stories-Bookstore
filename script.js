@@ -26,6 +26,16 @@ const books = [
     link: "books/Beyond The Horizon of Space-Echoes Beyond Eternity.pdf",
     description: "The complete and final story of humanity’s encounter with Chronovar, an eternal cosmic intelligence.",
     featured: true
+  },
+     {
+    title: "Aetherion: The Frozen King",
+    author: "Advait S",
+    genre: "Dark Fantasy",
+    price: 0,
+    cover: "images/The Frozen King.png",
+    link: "books/Aetherion-The frozen king.pdf",
+    description: "A fallen celestial king, stripped of memory and cast to Earth, must choose family over dominion as a frozen cosmic war begins to awaken.",
+    featured: true
   }
 ];
 
@@ -350,6 +360,7 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideSplash, 1200);
   }
 });
+
 
 
 
