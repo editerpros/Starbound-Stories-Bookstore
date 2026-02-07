@@ -2,22 +2,22 @@
   {
     "id": "aetherion",
     "title": "Aetherion: The Frozen King",
-    "pdf": "https://editerpros.github.io/Starbound-Stories-Bookstore/books/Aetherion-The frozen king.pdf",
-    "cover": "https://editerpros.github.io/Starbound-Stories-Bookstore/images/The Frozen King.png",
+    "pdf": "https://editerpros.github.io/Starbound-Stories-Bookstore/books/Aetherion-The%20frozen%20king.pdf",
+    "cover": "https://editerpros.github.io/Starbound-Stories-Bookstore/images/The%20Frozen%20King.png",
     "universe": "Starbound"
   },
   {
     "id": "beyond-the-horizon-of-space-1",
     "title": "Beyond The Horizon of Space: A Journey into the Unknown Universe",
-    "pdf": "https://editerpros.github.io/Starbound-Stories-Bookstore/books/Beyond The Horizon of Space-A Journey into the Unknown Universe.pdf",
+    "pdf": "https://editerpros.github.io/Starbound-Stories-Bookstore/books/Beyond%20The%20Horizon%20of%20Space-A%20Journey%20into%20the%20Unknown%20Universe.pdf",
     "cover": "https://editerpros.github.io/Starbound-Stories-Bookstore/images/Beyondthehorizonofspace_cover.jpg",
     "universe": "Starbound"
-  }
+  },
   {
     "id": "beyond-the-horizon-of-space-2",
     "title": "Beyond the Horizon of Space: Echoes Beyond Eternity",
-    "pdf": "https://editerpros.github.io/Starbound-Stories-Bookstore/books/Beyond The Horizon of Space-Echoes Beyond Eternity.pdf",
-    "cover": "https://editerpros.github.io/Starbound-Stories-Bookstore/images/Echoes Beyond Eternity.png",
+    "pdf": "https://editerpros.github.io/Starbound-Stories-Bookstore/books/Beyond%20The%20Horizon%20of%20Space-Echoes%20Beyond%20Eternity.pdf",
+    "cover": "https://editerpros.github.io/Starbound-Stories-Bookstore/images/Echoes%20Beyond%20Eternity.png",
     "universe": "Starbound"
   }
 ]
