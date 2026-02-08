@@ -3,7 +3,7 @@
    Theme: Dark blue + neon cyan
    Drop-in replacement for your current style.css
    ------------------------------------------------------------------ */
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500;600&display=swap');
 /* -------------------------
    Variables (easy to tweak)
    ------------------------- */
@@ -291,3 +291,4 @@ select{ padding:10px 12px; border-radius:10px; border:none; background: linear-g
 }
 
 /* End of style.css */
+
