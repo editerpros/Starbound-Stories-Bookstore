@@ -27,7 +27,7 @@ const books = [
     description: "The complete and final story of humanity’s encounter with Chronovar, an eternal cosmic intelligence.",
     featured: true
   },
-     {
+  {
     title: "Aetherion: The Frozen King",
     author: "Advait S",
     genre: "Dark Fantasy",
@@ -35,6 +35,16 @@ const books = [
     cover: "images/The Frozen King.png",
     link: "books/Aetherion-The frozen king.pdf",
     description: "A fallen celestial king, stripped of memory and cast to Earth, must choose family over dominion as a frozen cosmic war begins to awaken.",
+    featured: true
+  },
+  {
+    title: "Eclipsera-The Treasure of Shadows",
+    author: "Aradhya S",
+    genre: "Fiction",
+    price: 0,
+    cover: "images/𝗘𝗖𝗟𝗜𝗣𝗦𝗘𝗥A.jpeg",
+    link: "books/ECLIPSERA-The%20Treasure%20of%20Shadows.pdf",
+    description: "It is an adventure story.",
     featured: true
   }
 ];
@@ -360,6 +370,7 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideSplash, 1200);
   }
 });
+
 
 
 
