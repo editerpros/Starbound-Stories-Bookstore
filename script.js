@@ -42,7 +42,7 @@ const books = [
     author: "Aradhya S",
     genre: "Fiction",
     price: 0,
-    cover: "images/𝗘𝗖𝗟𝗜𝗣𝗦𝗘𝗥A.jpeg",
+    cover: "images/𝗘𝗖𝗟𝗜𝗣𝗦𝗘𝗥A.png",
     link: "books/ECLIPSERA-The%20Treasure%20of%20Shadows.pdf",
     description: "It is an adventure story.",
     featured: true
@@ -370,6 +370,7 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideSplash, 1200);
   }
 });
+
 
 
 
